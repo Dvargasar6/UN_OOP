@@ -4,7 +4,7 @@ class Planet:
 
     def __init__(self, name: None, satellitesNumber: 0,
     mass: 0.0, volume: 0.0, diameter: 0,
-    major_semiaxis: 0, planet_type: PlanetType,
+    major_semiaxis: 0, orbitalPeriod: 0, rotationPeriod:0, planet_type: PlanetType,
     observable: False):
 
         self.name = name
@@ -13,8 +13,11 @@ class Planet:
         self.volume = volume
         self.diameter = diameter
         self.major_semiaxis = major_semiaxis
+        self.orbitalPeriod = orbitalPeriod
+        self.rotationPeriod = rotationPeriod
         self.planet_type = planet_type
         self.observable = observable
+
 
     def printAttributes(self):
         print(f'Nombre del planeta : {self.name}')
@@ -23,6 +26,8 @@ class Planet:
         print(f'Volumen del planeta : {self.volume} km^3')
         print(f'Diametro del planeta : {self.diameter} km')
         print(f'Semieje mayor del planeta : {self.major_semiaxis} Mkm')
+        print(f'Periodo orbital del planeta : {self.orbitalPeriod} anos')
+        print(f'Periodo de rotacion del planeta : {self.rotationPeriod} dias')
         print(f'Tipo del planeta : {self.planet_type.value}')
         print(f'Observable : {self.observable}')
         print(f'\n')
