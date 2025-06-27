@@ -12,7 +12,7 @@ public class Vendedor {
     }
 
     String imprimir() {
-        return "Nombre del vendedor =" + nombre + "\nApellidos del vendedor = " + apellidos+"\nEdad del vendedor = " + edad;
+        return "Nombre del vendedor :" + nombre + "\nApellidos del vendedor : " + apellidos+"\nEdad del vendedor : " + edad;
     }
 
 
